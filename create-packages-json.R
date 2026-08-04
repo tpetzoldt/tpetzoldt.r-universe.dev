@@ -18,13 +18,15 @@ registered_pkgs <- data.frame(
 # 2. Define additional packages (GitHub + R-Forge maintainer repos)
 additional_pkgs <- data.frame(
   package = c("antibioticR", 
-              "biblioview"),
+              "biblioview",
+              "salmoRodeo"),
   url     = c("https://github.com/tpetzoldt/antibioticR", 
-              "https://github.com/tpetzoldt/biblioview"),
-  subdir  = c(NA_character_, NA_character_),
-  role    = c("maintainer", "maintainer"),
-  status  = c("dev", "dev"),
-  on_cran = c(FALSE, FALSE),
+              "https://github.com/tpetzoldt/biblioview",
+              "https://github.com/tpetzoldt/salmoRodeo"),
+  subdir  = c(rep(NA_character_, 3)),
+  role    = c(rep("maintainer", 3)),
+  status  = c(rep("dev", 3)),
+  on_cran = c(rep(FALSE, 3)),
   stringsAsFactors = FALSE
 )
 

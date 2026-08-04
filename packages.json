@@ -65,6 +65,13 @@
     "on_cran": true
   },
   {
+    "package": "salmoRodeo",
+    "url": "https://github.com/tpetzoldt/salmoRodeo",
+    "role": "maintainer",
+    "status": "dev",
+    "on_cran": false
+  },
+  {
     "package": "simecol",
     "url": "https://github.com/tpetzoldt/simecol",
     "role": "maintainer",
