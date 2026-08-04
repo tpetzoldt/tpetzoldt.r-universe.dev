@@ -1,0 +1,54 @@
+[
+  {
+    "package": "antibioticR",
+    "url": "https://github.com/tpetzoldt/antibioticR"
+  },
+  {
+    "package": "biblioview",
+    "url": "https://github.com/tpetzoldt/biblioview"
+  },
+  {
+    "package": "cardidates",
+    "url": "https://github.com/r-forge/cardidates",
+    "subdir": "pkg/cardidates"
+  },
+  {
+    "package": "deSolve",
+    "url": "https://github.com/tpetzoldt/desolve"
+  },
+  {
+    "package": "FAdist",
+    "url": "https://github.com/tpetzoldt/fadist"
+  },
+  {
+    "package": "FAmle",
+    "url": "https://github.com/tpetzoldt/famle"
+  },
+  {
+    "package": "FME",
+    "url": "https://github.com/r-forge/FME",
+    "subdir": "pkg/FME"
+  },
+  {
+    "package": "growthrates",
+    "url": "https://github.com/tpetzoldt/growthrates"
+  },
+  {
+    "package": "marelac",
+    "url": "https://github.com/r-forge/marelac",
+    "subdir": "pkg/marelac"
+  },
+  {
+    "package": "proto",
+    "url": "https://github.com/hadley/proto"
+  },
+  {
+    "package": "qualV",
+    "url": "https://github.com/r-forge/qualV",
+    "subdir": "pkg/qualV"
+  },
+  {
+    "package": "simecol",
+    "url": "https://github.com/tpetzoldt/simecol"
+  }
+]
