@@ -13,13 +13,15 @@ This configuration file is generated and updated using the script [create-packag
 ## How to Install Packages
 
 To install packages primarily from CRAN, falling back to this universe for development versions or non-CRAN packages:
-  
-  options(repos = c(
-    CRAN = "https://cloud.r-project.org",
-    tpetzoldt = "https://tpetzoldt.r-universe.dev"
-  ))
+
+```r
+options(repos = c(
+  CRAN = "https://cloud.r-project.org",
+  tpetzoldt = "https://tpetzoldt.r-universe.dev"
+))
 
 install.packages("package_name")
+```
 
 ## Build Frequency
 
