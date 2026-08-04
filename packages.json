@@ -14,22 +14,30 @@
     "on_cran": false
   },
   {
+    "package": "cardidates",
+    "url": "https://github.com/r-forge/cardidates",
+    "role": "maintainer",
+    "status": "release",
+    "on_cran": true,
+    "subdir": "pkg/cardidates"
+  },
+  {
     "package": "deSolve",
-    "url": "https://github.com/tpetzoldt/desolve",
+    "url": "https://github.com/tpetzoldt/deSolve",
     "role": "maintainer",
     "status": "release",
     "on_cran": true
   },
   {
     "package": "FAdist",
-    "url": "https://github.com/tpetzoldt/fadist",
+    "url": "https://github.com/tpetzoldt/FAdist",
     "role": "maintainer",
     "status": "release",
     "on_cran": true
   },
   {
     "package": "FAmle",
-    "url": "https://github.com/tpetzoldt/famle",
+    "url": "https://github.com/tpetzoldt/FAmle",
     "role": "maintainer",
     "status": "release",
     "on_cran": true
@@ -63,6 +71,14 @@
     "role": "co-author",
     "status": "release",
     "on_cran": true
+  },
+  {
+    "package": "qualV",
+    "url": "https://github.com/r-forge/qualV",
+    "role": "maintainer",
+    "status": "release",
+    "on_cran": true,
+    "subdir": "pkg/qualV"
   },
   {
     "package": "salmoRodeo",

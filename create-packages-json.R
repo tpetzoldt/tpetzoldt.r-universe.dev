@@ -1,36 +1,44 @@
 library(jsonlite)
 
-username <- "tpetzoldt"
-
-# 1. Fetch current universe packages (e.g. your active CRAN packages)
-pkgs <- fromJSON(sprintf("https://%s.r-universe.dev/api/packages", username))
-
-registered_pkgs <- data.frame(
-  package = pkgs$Package,
-  url     = pkgs$RemoteUrl,
-  subdir  = NA_character_,
-  role    = "maintainer",
-  status  = "release",
-  on_cran = TRUE,
-  stringsAsFactors = FALSE
-)
-
-# 2. Define additional packages (GitHub + R-Forge maintainer repos)
-additional_pkgs <- data.frame(
-  package = c("antibioticR", 
+# 1. Packages maintained by Thomas Petzoldt (CRAN + GitHub dev repos)
+maintained_pkgs <- data.frame(
+  package = c("deSolve",
+              "growthrates",
+              "simecol",
+              "cardidates",
+              "qualV",
+              "FAmle",
+              "FAdist",
+              "antibioticR",
               "biblioview",
               "salmoRodeo"),
-  url     = c("https://github.com/tpetzoldt/antibioticR", 
+  url     = c("https://github.com/tpetzoldt/deSolve",
+              "https://github.com/tpetzoldt/growthrates",
+              "https://github.com/tpetzoldt/simecol",
+              "https://github.com/r-forge/cardidates",
+              "https://github.com/r-forge/qualV",
+              "https://github.com/tpetzoldt/FAmle",
+              "https://github.com/tpetzoldt/FAdist",
+              "https://github.com/tpetzoldt/antibioticR",
               "https://github.com/tpetzoldt/biblioview",
               "https://github.com/tpetzoldt/salmoRodeo"),
-  subdir  = c(rep(NA_character_, 3)),
-  role    = c(rep("maintainer", 3)),
-  status  = c(rep("dev", 3)),
-  on_cran = c(rep(FALSE, 3)),
+  subdir  = c(NA_character_, 
+              NA_character_, 
+              NA_character_, 
+              "pkg/cardidates", 
+              "pkg/qualV", 
+              NA_character_, 
+              NA_character_, 
+              NA_character_, 
+              NA_character_,
+              NA_character_),
+  role    = "maintainer",
+  status  = c("release", "release", "release", "release", "release", "release", "release", "dev", "dev", "dev"),
+  on_cran = c(TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE),
   stringsAsFactors = FALSE
 )
 
-# 3. Define co-authored / contributed packages
+# 2. Co-authored / Contributed packages (not maintained by you on CRAN)
 coauthored_pkgs <- data.frame(
   package = c("FME",
               "marelac",
@@ -39,18 +47,18 @@ coauthored_pkgs <- data.frame(
               "https://github.com/r-forge/marelac",
               "https://github.com/hadley/proto"),
   subdir  = c("pkg/FME", "pkg/marelac", NA_character_),
-  role    = c("co-author", "co-author", "co-author"),
-  status  = c("release", "release", "release"),
-  on_cran = c(TRUE, TRUE, TRUE),
+  role    = "co-author",
+  status  = "release",
+  on_cran = TRUE,
   stringsAsFactors = FALSE
 )
 
-# 4. Combine and remove duplicates (keeps the first occurrence)
-combined_df <- rbind(registered_pkgs, additional_pkgs, coauthored_pkgs)
+# 3. Combine and sort alphabetically
+combined_df <- rbind(maintained_pkgs, coauthored_pkgs)
 combined_df <- combined_df[!duplicated(combined_df$package), ]
 combined_df <- combined_df[order(combined_df$package), ]
 
-# 5. Format into a clean list structure (removes NA 'subdir' entries, retains metadata)
+# 4. Format into clean list structure (removes NA 'subdir' entries)
 pkg_list <- lapply(seq_len(nrow(combined_df)), function(i) {
   item <- list(
     package = combined_df$package[i],
@@ -65,7 +73,7 @@ pkg_list <- lapply(seq_len(nrow(combined_df)), function(i) {
   return(item)
 })
 
-# 6. Write to packages.json
+# 5. Export to packages.json
 writeLines(
   toJSON(pkg_list, pretty = TRUE, auto_unbox = TRUE), 
   "packages.json"
