@@ -15,11 +15,10 @@
   },
   {
     "package": "cardidates",
-    "url": "https://github.com/r-forge/cardidates",
+    "url": "https://github.com/cardidates",
     "role": "maintainer",
     "status": "release",
-    "on_cran": true,
-    "subdir": "pkg/cardidates"
+    "on_cran": true
   },
   {
     "package": "deSolve",
@@ -74,11 +73,10 @@
   },
   {
     "package": "qualV",
-    "url": "https://github.com/r-forge/qualV",
+    "url": "https://github.com/qualV",
     "role": "maintainer",
     "status": "release",
-    "on_cran": true,
-    "subdir": "pkg/qualV"
+    "on_cran": true
   },
   {
     "package": "salmoRodeo",
