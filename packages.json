@@ -15,7 +15,7 @@
   },
   {
     "package": "cardidates",
-    "url": "https://github.com/cardidates",
+    "url": "https://github.com/tpetzoldt/cardidates",
     "role": "maintainer",
     "status": "release",
     "on_cran": true
@@ -73,7 +73,7 @@
   },
   {
     "package": "qualV",
-    "url": "https://github.com/qualV",
+    "url": "https://github.com/tpetzoldt/qualV",
     "role": "maintainer",
     "status": "release",
     "on_cran": true
