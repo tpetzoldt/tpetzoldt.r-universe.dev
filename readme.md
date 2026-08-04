@@ -1,4 +1,4 @@
-# Thomas Petzoldt's R-Universe Registry
+# tpetzoldt's R-Universe Registry
 
 https://tpetzoldt.r-universe.dev
 
@@ -26,3 +26,4 @@ install.packages("package_name")
 ## Build Frequency
 
 Package builds are triggered automatically roughly once every 24 hours or whenever changes are committed to this repository.
+
