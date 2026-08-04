@@ -1,54 +1,74 @@
 [
   {
     "package": "antibioticR",
-    "url": "https://github.com/tpetzoldt/antibioticR"
+    "url": "https://github.com/tpetzoldt/antibioticR",
+    "role": "maintainer",
+    "status": "dev",
+    "on_cran": false
   },
   {
     "package": "biblioview",
-    "url": "https://github.com/tpetzoldt/biblioview"
-  },
-  {
-    "package": "cardidates",
-    "url": "https://github.com/r-forge/cardidates",
-    "subdir": "pkg/cardidates"
+    "url": "https://github.com/tpetzoldt/biblioview",
+    "role": "maintainer",
+    "status": "dev",
+    "on_cran": false
   },
   {
     "package": "deSolve",
-    "url": "https://github.com/tpetzoldt/desolve"
+    "url": "https://github.com/tpetzoldt/desolve",
+    "role": "maintainer",
+    "status": "release",
+    "on_cran": true
   },
   {
     "package": "FAdist",
-    "url": "https://github.com/tpetzoldt/fadist"
+    "url": "https://github.com/tpetzoldt/fadist",
+    "role": "maintainer",
+    "status": "release",
+    "on_cran": true
   },
   {
     "package": "FAmle",
-    "url": "https://github.com/tpetzoldt/famle"
+    "url": "https://github.com/tpetzoldt/famle",
+    "role": "maintainer",
+    "status": "release",
+    "on_cran": true
   },
   {
     "package": "FME",
     "url": "https://github.com/r-forge/FME",
+    "role": "co-author",
+    "status": "release",
+    "on_cran": true,
     "subdir": "pkg/FME"
   },
   {
     "package": "growthrates",
-    "url": "https://github.com/tpetzoldt/growthrates"
+    "url": "https://github.com/tpetzoldt/growthrates",
+    "role": "maintainer",
+    "status": "release",
+    "on_cran": true
   },
   {
     "package": "marelac",
     "url": "https://github.com/r-forge/marelac",
+    "role": "co-author",
+    "status": "release",
+    "on_cran": true,
     "subdir": "pkg/marelac"
   },
   {
     "package": "proto",
-    "url": "https://github.com/hadley/proto"
-  },
-  {
-    "package": "qualV",
-    "url": "https://github.com/r-forge/qualV",
-    "subdir": "pkg/qualV"
+    "url": "https://github.com/hadley/proto",
+    "role": "co-author",
+    "status": "release",
+    "on_cran": true
   },
   {
     "package": "simecol",
-    "url": "https://github.com/tpetzoldt/simecol"
+    "url": "https://github.com/tpetzoldt/simecol",
+    "role": "maintainer",
+    "status": "release",
+    "on_cran": true
   }
 ]
