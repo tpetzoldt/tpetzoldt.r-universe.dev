@@ -65,6 +65,13 @@
     "subdir": "pkg/marelac"
   },
   {
+    "package": "outfloweR",
+    "url": "https://github.com/tpetzoldt/outfloweR",
+    "role": "maintainer",
+    "status": "dev",
+    "on_cran": false
+  },
+  {
     "package": "proto",
     "url": "https://github.com/hadley/proto",
     "role": "co-author",
