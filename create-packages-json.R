@@ -11,7 +11,8 @@ maintained_pkgs <- data.frame(
               "FAdist",
               "antibioticR",
               "biblioview",
-              "salmoRodeo"),
+              "salmoRodeo",
+              "outfloweR"),
   url     = c("https://github.com/tpetzoldt/deSolve",
               "https://github.com/tpetzoldt/growthrates",
               "https://github.com/tpetzoldt/simecol",
@@ -21,20 +22,22 @@ maintained_pkgs <- data.frame(
               "https://github.com/tpetzoldt/FAdist",
               "https://github.com/tpetzoldt/antibioticR",
               "https://github.com/tpetzoldt/biblioview",
-              "https://github.com/tpetzoldt/salmoRodeo"),
-  subdir  = c(NA_character_, 
-              NA_character_, 
-              NA_character_, 
-              NA_character_, 
-              NA_character_, 
-              NA_character_, 
-              NA_character_, 
-              NA_character_, 
+              "https://github.com/tpetzoldt/salmoRodeo",
+              "https://github.com/tpetzoldt/outfloweR"),
+  subdir  = c(NA_character_,
+              NA_character_,
+              NA_character_,
+              NA_character_,
+              NA_character_,
+              NA_character_,
+              NA_character_,
+              NA_character_,
+              NA_character_,
               NA_character_,
               NA_character_),
   role    = "maintainer",
-  status  = c("release", "release", "release", "release", "release", "release", "release", "dev", "dev", "dev"),
-  on_cran = c(TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE),
+  status  = c("release", "release", "release", "release", "release", "release", "release", "dev", "dev", "dev", "dev"),
+  on_cran = c(TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE),
   stringsAsFactors = FALSE
 )
 
@@ -75,6 +78,6 @@ pkg_list <- lapply(seq_len(nrow(combined_df)), function(i) {
 
 # 5. Export to packages.json
 writeLines(
-  toJSON(pkg_list, pretty = TRUE, auto_unbox = TRUE), 
+  toJSON(pkg_list, pretty = TRUE, auto_unbox = TRUE),
   "packages.json"
 )
