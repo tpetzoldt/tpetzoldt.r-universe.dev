@@ -65,6 +65,13 @@
     "subdir": "pkg/marelac"
   },
   {
+    "package": "mlfeaturer",
+    "url": "https://github.com/tpetzoldt/mlfeaturer",
+    "role": "maintainer",
+    "status": "dev",
+    "on_cran": false
+  },
+  {
     "package": "outfloweR",
     "url": "https://github.com/tpetzoldt/outfloweR",
     "role": "maintainer",

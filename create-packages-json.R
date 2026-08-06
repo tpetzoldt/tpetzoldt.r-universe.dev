@@ -12,7 +12,8 @@ maintained_pkgs <- data.frame(
               "antibioticR",
               "biblioview",
               "salmoRodeo",
-              "outfloweR"),
+              "outfloweR",
+              "mlfeaturer"),
   url     = c("https://github.com/tpetzoldt/deSolve",
               "https://github.com/tpetzoldt/growthrates",
               "https://github.com/tpetzoldt/simecol",
@@ -23,8 +24,10 @@ maintained_pkgs <- data.frame(
               "https://github.com/tpetzoldt/antibioticR",
               "https://github.com/tpetzoldt/biblioview",
               "https://github.com/tpetzoldt/salmoRodeo",
-              "https://github.com/tpetzoldt/outfloweR"),
+              "https://github.com/tpetzoldt/outfloweR",
+              "https://github.com/tpetzoldt/mlfeaturer"),
   subdir  = c(NA_character_,
+              NA_character_,
               NA_character_,
               NA_character_,
               NA_character_,
@@ -36,8 +39,9 @@ maintained_pkgs <- data.frame(
               NA_character_,
               NA_character_),
   role    = "maintainer",
-  status  = c("release", "release", "release", "release", "release", "release", "release", "dev", "dev", "dev", "dev"),
-  on_cran = c(TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE),
+  status  = c("release", "release", "release", "release", "release", "release",
+              "release", "dev", "dev", "dev", "dev", "dev"),
+  on_cran = c(TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE),
   stringsAsFactors = FALSE
 )
 
